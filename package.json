@@ -6,7 +6,7 @@
   "scripts": {
     "build": "esbuild src/index.tsx --bundle --minify --sourcemap --outfile=public/bundle.js",
     "build:dev": "node esbuild.dev.js",
-    "start": "node esbuild.dev.js -w",
+    "start": "node esbuild.config.js -w",
     "open": "open public/index.html"
   },
   "keywords": [],
@@ -21,5 +21,6 @@
     "@types/react-dom": "^18.0.11",
     "react-dom": "^18.2.0",
     "typescript": "^5.0.4"
-  }
+  },
+  "type": "module"
 }
